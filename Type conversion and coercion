@@ -1,0 +1,15 @@
+//type conversion
+const inputYear = "1991";
+console.log(Number(inputYear) + 18); // string je pretvoren u broj
+console.log(inputYear + 18); // string nije pretvoren u broj
+
+//type coercion
+console.log("i am " + 23 + " years old ");
+console.log(`23` - `10` - 3);
+console.log(`23` * `2`);
+console.log(`23` > `18`);
+
+//game gues the outpoot
+let n = "1" + 1;
+n = n - 1;
+console.log(n); // riješenje nije 1 nego je 10
