@@ -1,0 +1,26 @@
+Templates, (naopake navodnike koristimo kako bi lakše pisali string)
+
+const firstName = "Jonas";
+const job = "tacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jonas =
+  "I'm" + firstName + " , a " + (year - birthYear) + " years old " + job + "!";
+
+console.log(jonas);
+
+
+
+PRIMJER S NAOPAKIM NAVODNICIMA
+
+const jonasNew = `I am ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
+
+console.log("string with\n\
+multiple \n\
+lines");
+
+console.log(`String
+multiple
+lines`)
