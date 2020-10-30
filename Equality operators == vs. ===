@@ -28,3 +28,19 @@ if (favourite === 23) {
 if (favourite !== 23) {
   console.log("whay not 23");
 }
+
+
+
+/*VJEŽBA PDF*/
+
+const numNeighbors = Number(
+  prompt("How many neighbour countries does your country have?")
+);
+
+if (numNeighbors === 1) {
+  console.log("Only one border");
+} else if (numNeighbors > 1) {
+  console.log("More then one border");
+} else {
+  console.log("No borders");
+}
