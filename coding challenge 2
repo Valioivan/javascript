@@ -1,0 +1,11 @@
+let populationInDeutschland = 80;
+let averagePopulation = 33;
+if (populationInDeutschland > averagePopulation) {
+  console.log("Popualtion in Deutschland is greater than average");
+} else {
+  console.log(
+    `Germanis's population is ${
+      averagePopulation - populationInDeutschland
+    } milion below average`
+  );
+}
