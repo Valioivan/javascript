@@ -1,0 +1,30 @@
+
+// === equal
+/// !== not equal
+const age = "18";
+if (age === 18) {
+  console.log(" You just become an adult (strict)");
+}
+
+if (age == 18) {
+  console.log(" You just become an adult (lose)");
+}
+
+const favourite = Number(prompt("What is your favourite  number?")); // dodan je Number da bi se string pretvorio u broj i tek ona se može koristiti ===
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  // '23' == 23
+  console.log("Cool it is an amazing number");
+} else if (favourite === 7) {
+  console.log("7 is also cool nulber");
+} else if (favourite === 9) {
+  console.log("9 is also cool nulber");
+} else {
+  console.log(" Number is not 23 or 7 or 9");
+}
+
+if (favourite !== 23) {
+  console.log("whay not 23");
+}
