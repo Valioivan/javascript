@@ -1,0 +1,17 @@
+const age = 15;
+
+if (age >= 18) {
+  console.log("Sara can start driving license ");
+} else {
+  const yerasLeft = 18 - age;
+  console.log(`Sara is too young. Wait another ${yerasLeft} years`);
+}
+
+const birthYear = 2021;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
