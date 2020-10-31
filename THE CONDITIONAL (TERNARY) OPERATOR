@@ -1,0 +1,15 @@
+const age = 33;
+age >=18 ? console.log('I like wine'):
+console.log('I like to drink water'); 
+
+const drink = age >= 18 ?'wine' :'water';
+console.log(drink);
+
+console.log(`i like to drink ${age >= 18 ?'wine' :'water'}`);
+
+
+
+// VJEŽBA PDF
+
+const population = 13;
+console.log(`Portugal's population is ˘${population >= 33 ? 'above' : 'below'} the average`);
