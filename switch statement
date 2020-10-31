@@ -46,3 +46,34 @@
  }else{
   console.log('not a valid day');
  }
+ 
+ 
+ /*VJEŽBA ZA SVITCH STATEMENT */
+
+ 
+ const language = 'chinese';
+
+ switch (language){
+   case 'chinese':
+     console.log('most number of native speakers');
+     break;
+    
+    case 'spanish':
+      console.log('2nd place in number of native speakers');
+      break;
+
+    case 'english':
+      console.log('3rd place');
+      break;
+
+    case 'hindi':
+      console.log('number 4');
+      break;
+
+      case 'arabica':
+        console.log( '5th most spoen language');
+        break
+
+    default:
+      console.log('Great language too');
+ };
