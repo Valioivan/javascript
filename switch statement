@@ -1,0 +1,48 @@
+/************************************************
+ * SWITCH STATEMENT
+ * *****************************************/
+
+ const day = 'friday';
+
+ switch(day){
+   case 'monday': // day === monady
+     console.log('Plan my course');
+     console.log('Go to meeting');
+    break;
+
+    case 'tuesday':
+      console.log('Prepare videos');
+      break;
+
+    case 'wednesday':
+    case 'thursday':
+      console.log('write code');
+      break
+    case 'friday':
+      console.log('Record videos');
+      break
+    case 'saturday':
+    case 'sunday':
+      console.log('enjoj the weekend');
+      break
+    default:
+      console.log('not a valid day');
+ }
+
+
+ // ako bi switch pisali kao if else - vezano za šrethodni primjer
+
+ if (day ==='monday'){
+  console.log('Plan my course');
+  console.log('Go to meeting');
+ } else if (day ==='tuesday'){
+  console.log('Prepare videos');
+ } else if (day ==='wednesday' || day ==='thursday'){
+  console.log('write code');
+ } else if (day ==='friday'){
+  console.log('Record videos');
+ }else if (day ==='saturday' || day ==='sunday'){
+  console.log('enjoj the weekend');
+ }else{
+  console.log('not a valid day');
+ }
