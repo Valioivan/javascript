@@ -1,0 +1,8 @@
+
+// ako je vrijednost između 50 i 300 onda je tip 15 %
+// ako je neka druga vrijednost onda je 20%
+// value 275, 40, 430
+
+const bill = 200;
+const tip = bill>=50 && bill<=300 ? bill * 0.15 : bill * 0.20;
+console.log( `The bill was ${bill} the tip was ${tip} and the final amount was ${bill + tip}`);
