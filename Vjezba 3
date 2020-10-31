@@ -1,0 +1,57 @@
+/*************************************************
+ * Code chalenge 3
+ ************************************************/
+
+ // 1) Calculate average score
+ // 2) Compare the score to determine the winner, and print it to the console , wiiner, loser, draw
+
+//Bonus - minimum score, winner is a team who has more score and minimun score grether then 100 (logical operator &&)
+
+// Dolphins score 96, 108, 89
+//Koalas score 88, 91, 110
+
+const dolphinsAverageScore = (96 + 108 + 89) / 3;
+const koalasAverageScore = (100 + 91 + 110) / 3;
+console.log(dolphinsAverageScore, koalasAverageScore);
+
+if(dolphinsAverageScore > koalasAverageScore){
+  console.log('Dolphins are the winners');
+}else if(koalasAverageScore > dolphinsAverageScore){
+  console.log('Kolalas are the winners');
+}else if( koalasAverageScore === dolphinsAverageScore){
+  console.log('There is a draw');
+}else{
+  console.log('You have done something wrong');
+}
+
+  //Bonus 1
+const bonusDolphinsAverageScore = (97 + 112 + 101) / 3;
+const bonusKoalasAverageScore = (109 + 95 + 123) / 3;
+
+console.log(bonusDolphinsAverageScore, bonusKoalasAverageScore);
+
+const minimumScore = 100;
+
+if( bonusDolphinsAverageScore > bonusKoalasAverageScore && bonusDolphinsAverageScore > minimumScore){
+  console.log(`Dolphin's are winners`);
+} else if(bonusKoalasAverageScore > bonusDolphinsAverageScore && bonusKoalasAverageScore > minimumScore){
+  console.log(`Koala's are the winners`);
+} else{
+  console.log('There is a draw');
+}
+
+//Bonus 2
+
+const dolphinsScore = (97 + 112 + 80) / 3;
+const koalasScore = (109 + 95 + 50) / 3;
+console.log(dolphinsScore , koalasScore);
+
+if (dolphinsScore > koalasScore && dolphinsScore >= minimumScore){
+  console.log('Dolphins are the winners');
+} else if( koalasScore > dolphinsScore && koalasScore >= minimumScore){
+  console.log('Kolas are the winners');
+} else if( dolphinsScore === koalasScore && dolphinsScore >= minimumScore && koalasScore >= minimumScore){
+  console.log('Both win the trophy');
+}else{
+  console.log('No team wins the trophy');
+}
