@@ -1,0 +1,22 @@
+
+/*******************************************
+ * CODING CHALLENGE SIMPLE TIP CALCULATOR
+ * *****************************************
+ */
+
+/*Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In this country, it's usual to tip 15 % if the bill value is between 50 and 300. If the value is different, the tip is 20%. 
+
+ 1) Your task is to calculate the tip, depending on the tip value. Create a variable called 'tip' for this. It is not allowed to use an if/else statement. 
+
+ 2) Print a string to the console containing the bill value, the tip, and the final value. Example: 'The bil is 275, the tip is 41.25 and the total value is 316,25'
+
+ TEST DATA: 275, 40, 430
+ */
+
+const bill = 275;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `The bill is ${bill}, the tip is ${tip} and the total value is ${bill + tip}`
+);
