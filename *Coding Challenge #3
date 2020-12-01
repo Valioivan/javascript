@@ -1,0 +1,60 @@
+/**************************************************************
+ *Coding Challenge #3
+ ******************************************************************************
+ */
+
+/**Let's go back to Mark and JOhn comparing their BMI's. This time let's use object to implement the calculations, remember BMI = mass / (height * height)
+ *
+ * 1) For ech of them create an object with properties for their full name, mass and height (Mark Miler, Jonas Smith)
+ * 2)Create a calcBMI method on each object to calculate the BMI. Store a BMI value in a property and return it from the method.
+ * 3) Log to the console who has higher BMI together with the name and respective BMI.
+ *
+ * EXAMPLE: John's BMI is 28,3 is higher than Marks's (23,9)
+ *
+ * TEST DATA:
+ * Marks weights 78 kg and is 1.69 m tall.
+ * John wights 92 kg and is 1.95 m tall.
+ */
+
+//1
+const John = {
+  firstName: `John`,
+  lastName: `Smith`,
+  weight: 92,
+  height: 1.95,
+  //2
+  calcBMI: function () {
+    return this.weight / (this.height * this.height);
+  },
+};
+
+const Mark = {
+  firstName: `Mark`,
+  lastName: `Miller`,
+  weight: 78,
+  height: 1.69,
+  //2
+  calcBMI: function () {
+    return this.weight / (this.height * this.height);
+  },
+};
+
+//3
+
+if (John.calcBMI() > Mark.calcBMI()) {
+  console.log(
+    `${John.firstName} BMI is higher ${John.calcBMI()} than ${
+      Mark.firstName
+    } whos BMI is ${Mark.calcBMI()}`
+  );
+} else if (Mark.calcBMI() > John.calcBMI()) {
+  console.log(
+    `${Mark.firstName} BMI is higher ${Mark.calcBMI()} than ${
+      John.firstName
+    } whos BMI is ${John.calcBMI()}`
+  );
+} else {
+  console.log(`Something is wrong`);
+}
+
+console.log(John.calcBMI(), Mark.calcBMI());
