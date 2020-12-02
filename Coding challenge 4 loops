@@ -1,0 +1,34 @@
+/*******************************************************************Coding challenge 4 ************************************* */
+
+/*
+Let's improve steven's tip calculator even more, this time using loops.
+
+1) Create an array 'bills' containig all 10 test bill values. 
+
+
+2)Create empty arrays for the tips and the totals, 'tips' 'totals'
+
+3) use the calcTip function to calculate tips and total values for every bill value in the bill array, use a for loop to perform 10 calculations
+
+TEST DATA:
+22,295,176,440,37,105,10,1100,86,52
+
+HINT: call the calcTp function in the loop and use the push method to ad values to the tips and total arrays*/
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+//1
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+//2
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+
+console.log(bills, tips, totals);
